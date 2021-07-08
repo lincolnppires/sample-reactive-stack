@@ -1,12 +1,16 @@
 package com.example.webfluxannotated.controller;
 
 import com.example.webfluxannotated.model.Movie;
+import com.example.webfluxannotated.model.MovieEvent;
 import com.example.webfluxannotated.repository.MovieRepository;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+
+import java.time.Duration;
 
 /**
  * @author lincoln.pires
@@ -64,5 +68,13 @@ public class MovieController {
     @DeleteMapping
     public Mono<Void> deleteAllMovies() {
         return movieRepository.deleteAll();
+    }
+
+    //test in browser (http://localhost:8080/movies/events)
+    @GetMapping(value = "/events", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    public Flux<MovieEvent> getMovieEvents(){
+        return Flux.interval(Duration.ofSeconds(2))
+                .map(val ->
+                        new MovieEvent(val, "Movie Event"));
     }
 }
