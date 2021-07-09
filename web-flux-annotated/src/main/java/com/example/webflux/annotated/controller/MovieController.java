@@ -1,8 +1,8 @@
-package com.example.webfluxannotated.controller;
+package com.example.webflux.annotated.controller;
 
-import com.example.webfluxannotated.model.Movie;
-import com.example.webfluxannotated.model.MovieEvent;
-import com.example.webfluxannotated.repository.MovieRepository;
+import com.example.webflux.annotated.model.MovieEvent;
+import com.example.webflux.annotated.repository.MovieRepository;
+import com.example.webflux.annotated.model.Movie;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;

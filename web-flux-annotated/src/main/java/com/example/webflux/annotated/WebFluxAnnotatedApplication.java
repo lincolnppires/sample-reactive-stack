@@ -1,7 +1,7 @@
-package com.example.webfluxannotated;
+package com.example.webflux.annotated;
 
-import com.example.webfluxannotated.model.Movie;
-import com.example.webfluxannotated.repository.MovieRepository;
+import com.example.webflux.annotated.repository.MovieRepository;
+import com.example.webflux.annotated.model.Movie;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

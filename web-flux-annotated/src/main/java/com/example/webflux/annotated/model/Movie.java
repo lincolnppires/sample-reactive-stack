@@ -1,4 +1,4 @@
-package com.example.webfluxannotated.model;
+package com.example.webflux.annotated.model;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 

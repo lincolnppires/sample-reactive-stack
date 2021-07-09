@@ -1,6 +1,6 @@
-package com.example.webfluxannotated.repository;
+package com.example.webflux.annotated.repository;
 
-import com.example.webfluxannotated.model.Movie;
+import com.example.webflux.annotated.model.Movie;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 
 /**
