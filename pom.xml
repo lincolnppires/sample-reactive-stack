@@ -10,6 +10,8 @@
     <version>1.0</version>
     <modules>
         <module>sample-reactor</module>
+        <module>web-flux-annotated</module>
+        <module>web-flux-functional</module>
     </modules>
 
     <properties>
