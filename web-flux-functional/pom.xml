@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>web-flux-annotated</artifactId>
+    <artifactId>web-flux-functional</artifactId>
     <version>0.0.1</version>
-    <name>web-flux-annotated</name>
+    <name>web-flux-functional</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>11</java.version>
@@ -44,9 +44,7 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <version>5.7.2</version>
-            <scope>test</scope>
         </dependency>
-
     </dependencies>
 
     <build>
